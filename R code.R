@@ -27,7 +27,7 @@ variables<- read.table("variables.txt", header=T, sep="")
 
 kable(variables, format = "markdown")
 
-#Let’s start with the name field. And build a new predictive variables.
+#Letâ€™s start with the name field. And build a new predictive variables.
 test$Survived <- NA
 combi <- rbind(train, test)
 combi$Name <- as.character(combi$Name)
